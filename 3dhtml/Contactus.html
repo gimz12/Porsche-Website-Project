@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="newvali.js"> </script>
+</head>
+<body>
+
+    <div id="main">
+        <div data-scroll data-scroll-speed="" id="page1">
+
+          <nav class="navbar navbar-dark bg-black fixed-top">
+            <div class="container-fluid">
+                <img src="logo1.png" >
+              <a class="navbar-brand" href="3D.html">PORSCHE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-secondary" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h1 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h1>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="3D.html"><h2>Home</h2></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="testdrive.html"><h2>Book a Test Drive</h2></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><h2>FAQ</h2></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Contactus.html"><h2>Contact Us</h2></a>
+                    </li>
+                    <a class="icon-link icon-link-hover" href="loginface.php">
+                      Are You a ADMIN?
+                      <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+                    </a>
+                </div>
+              </div>
+            </div>
+        </nav>
+            <div class="bottom-page1">
+                <h1>Questions About <br>
+                    Our Products or Services?
+                </h1>
+            </div>
+
+            <img src="contact.jpg" alt="" style="bottom: 500px; object-fit: cover;">
+        </div>
+
+        <div id="page2">
+            <h1>Write To Us</h1>
+            <div class="page2-inner">
+                <div class="left2">
+                </div>
+                <div class="right2">
+                    <form action="webqdo.php" method="post" class="row g-3" name="myForm" onsubmit="return(vali())">
+                        <div class="row g-3">
+                            <div class="col">
+                                <label for="FirstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" placeholder="John" name="fname" aria-label="First name">
+                            </div>
+                            <div class="col">
+                                <label for="LastName" class="form-label">Last Name</label>
+                              <input type="text" class="form-control" placeholder="Kennedy" name="sname" aria-label="Last name">
+                            </div>
+                          </div>
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="email" class="form-control" placeholder="example@gmail.com" name="email" id="inputEmail">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="PhoneNumber" class="form-label">Phone Number</label>
+                          <input type="text" class="form-control" placeholder="Phone Number" name="phonenumber" id="inputphoneNumber">
+                        </div>
+                        <div class="form-floating">
+                            Message <br><br>
+                            <textarea class="form-control" placeholder="Leave a Message here" name="message1" id="floatingTextarea2" style="height: 100px"></textarea>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script1.js" ></script>
+</body>
+</html>

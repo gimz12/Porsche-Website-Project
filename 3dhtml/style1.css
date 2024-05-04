@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#page1{
+    height: 75vh;
+    width: 100vw;
+    background-color: red;
+    position: relative;
+}
+@font-face {
+    font-family: a;
+    src: url(./jost-variable.ttf);
+}
+@font-face {
+    font-family: b;
+    src: url(./KFOlCnqEu92Fr1MmEU9fBBc4\ \(1\).ttf);
+}
+@font-face {
+    font-family: c;
+    src: url(./KFOmCnqEu92Fr1Mu4mxK\ \(1\).ttf);
+}
+@font-face {
+    font-family: d;
+    src: url(./911porschav3.ttf);
+}
+#page1>nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    position: absolute;
+    height: 10vh;
+    width: 100vw;
+}
+.navbar-brand{
+    font-family: d;
+}
+.bottom-page1{
+    position: absolute;
+    top: 38vh;
+    height: 40vh;
+    width: 50vw;
+    left: 15%;
+}
+.bottom-page1>h1{
+    font-family: a;
+    font-size: 5vw;
+    font-weight: 100;
+    line-height: 1;
+    color:white;
+}
+#page2{
+    position: relative;
+    height: 65vh;
+    width: 100vw;
+    background-color: black;
+    font-family: d;
+}
+#page2>h1{
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    font-size: 4vw;
+    color: white;
+    font-weight: 100;
+}
+.page2inner{
+    display: flex;
+    top: 18%;
+    position: relative;
+    margin-bottom: 2vw;
+    height: 24%;
+    width: 100%;
+}
+.left2{
+    position: relative;
+    height: 100%;
+    width: 40%;
+    left: 5%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.left2>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.right2{
+    padding-top:5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: white;
+    left: 50%;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    font-family: a;
+}
+.right2>h4{
+    font-weight: 100;
+}
+.right2>h1{
+    font-size: 2vw;
+}
